@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+  background: url('club.jpeg') no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+.Hero-Section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  padding: 40px;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.Hero-Section button {
+  background: red;
+  border: 2px solid yellow;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.Hero-Section button:hover, .Hero-Section button:focus, .Hero-Section button:active {
+  background: yellow;
+  border: 2px solid red;
+}
+
+.btn {
+  width: 150px;
+  height: 40px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn:hover, .btn:focus, .btn:active  {
+  background: yellow;
+  color: red;
+}
+
+.block2, .block3, .block4, .block5 {
+  width: 300px;
+  padding: 60px;
+  margin: 20px auto;
+  text-align: center;
+  color: darkgrey;
+  cursor: pointer;
+}
+
+.block2:hover, .block3:hover, .block4:hover, .block2:focus, .block3:focus, .block4:focus, .block2:active, .block3:active, .block4:active{
+  background: rgba(255, 255, 255, 0.6);
+  border: 3px solid green;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+footer i {
+  font-size: 24px;
+  margin: 0 10px;
+  color: green;
+  transition: color 0.3s ease;
+}
+
+footer i:hover, footer i:focus, footer i:active {
+  color: darkgreen;
+}
+
+p:hover, p:focus, p:active{
+  color: green;
+}
+
+h3:hover, h3:focus, h3:active{
+  color: blueviolet;
+}
+
+h1:hover, h1:focus, h1:active{
+  color: blueviolet; 
+}
+
+input {
+  width: 250px;
+  height: 35px; 
+  border: 2px solid yellow;
+  border-radius: 11px;
+  margin: 10px;
+}
+
+.mrof{
+  width: 90px;
+  height: 30px;
+  border: 2px solid red;
+  border-radius: 8px;
+}
+
+h1,h3,p{
+  background: grey;
+  border-radius: 15px;
+  margin: 8px;
+}
+
+h3{
+   padding: 10px;
+}
+
+p{
+  font-size: 20px;
+  color: brown;
+}
+
+
+/* Адаптація для мобільних пристроїв (до 768px) */
+@media (max-width: 768px) {
+  .Hero-Section {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .Hero-Section h1 {
+    font-size: 24px;
+  }
+
+  .Hero-Section h3 {
+    font-size: 16px;
+  }
+
+  .btn {
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  .block2, .block3, .block4, .block5 {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    font-size: 14px;
+  }
+}
+
+/* Адаптація для дуже маленьких екранів (до 480px) */
+@media (max-width: 480px) {
+  .Hero-Section h1 {
+    font-size: 20px;
+  }
+
+  .Hero-Section h3 {
+    font-size: 14px;
+  }
+
+  .block2, .block3, .block4, .block5 {
+    font-size: 12px;
+    padding: 15px;
+  }
+
+  .btn {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+
+/* Адаптація для планшетів (768px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .Hero-Section {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+
+  .block2, .block3, .block4, .block5 {
+    width: 45%;
+    margin: 10px auto;
+    padding: 30px;
+  }
+
+  .block2:hover, .block3:hover, .block4:hover, .block2:focus, .block3:focus, .block4:focus {
+    transition: all 0.5s ease;
+  }
+}
+
+/* Адаптація для великих екранів (понад 1024px) */
+@media (min-width: 1025px) {
+  .Hero-Section h1 {
+    font-size: 36px;
+  }
+
+  .Hero-Section h3 {
+    font-size: 20px;
+  }
+
+  .block2, .block3, .block4, .block5 {
+    width: 30%;
+    padding: 40px;
+    margin: 20px auto;
+  }
+}
